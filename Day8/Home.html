@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - EduLearn Academy</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        nav{
+            background:#1f2b42;
+            color:white;
+            padding:20px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        nav h2{
+            margin-left:30px;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            margin-right:30px;
+        }
+
+        nav ul li{
+            margin-left:25px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-size:18px;
+        }
+
+        nav ul li a:hover{
+            color:orange;
+        }
+
+        .contact{
+            width:450px;
+            margin:50px auto;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 15px lightgray;
+        }
+
+        .contact h1{
+            text-align:center;
+            margin-bottom:25px;
+            color:#1f2b42;
+        }
+
+        label{
+            font-weight:bold;
+        }
+
+        input,
+        textarea{
+            width:100%;
+            padding:10px;
+            margin:10px 0 20px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        textarea{
+            height:120px;
+            resize:none;
+        }
+
+        button{
+            width:100%;
+            padding:12px;
+            background:#1f2b42;
+            color:white;
+            border:none;
+            font-size:18px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#31476d;
+        }
+
+        .info{
+            text-align:center;
+            margin-top:20px;
+            line-height:1.8;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <h2>EduLearn</h2>
+
+    <ul>
+        <li><a href="about.html">Home</a></li>
+        <li><a href="test.html">Courses</a></li>
+        <li><a href="Gmail/gmail.html">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="contact">
+
+    <h1>Contact Us</h1>
+
+    <form>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter your phone number">
+
+        <label>Message</label>
+        <textarea placeholder="Write your message here..."></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+    <div class="info">
+        <p><strong>📍 Address:</strong> Biratnagar, Nepal</p>
+        <p><strong>📞 Phone:</strong> +977-9800000000</p>
+        <p><strong>✉ Email:</strong> info@himalayalearning.com</p>
+    </div>
+
+</div>
+
+</body>
+</html>

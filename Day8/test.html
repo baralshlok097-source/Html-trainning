@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himalaya Academy - Courses</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        /* Navigation Bar */
+        nav{
+            background:#0b3d91;
+            color:white;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:15px 50px;
+        }
+
+        nav h2{
+            font-size:30px;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+        }
+
+        nav ul li{
+            margin-left:25px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            font-size:18px;
+        }
+
+        nav ul li a:hover{
+            color:yellow;
+        }
+
+        /* Heading */
+        .heading{
+            text-align:center;
+            padding:40px;
+        }
+
+        .heading h1{
+            color:#0b3d91;
+            font-size:42px;
+        }
+
+        .heading p{
+            font-size:18px;
+            color:#555;
+            margin-top:10px;
+        }
+
+        /* Course Cards */
+        .course-container{
+            display:flex;
+            justify-content:center;
+            gap:25px;
+            flex-wrap:wrap;
+            padding:30px;
+        }
+
+        .course{
+            background:white;
+            width:300px;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+            text-align:center;
+        }
+
+        .course h2{
+            color:#0b3d91;
+            margin-bottom:15px;
+        }
+
+        .course p{
+            margin-bottom:20px;
+            line-height:1.5;
+        }
+
+        .course button{
+            background:#0b3d91;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        .course button:hover{
+            background:#062b66;
+        }
+
+        footer{
+            background:#0b3d91;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<nav>
+    <h2>Himalaya Academy</h2>
+
+    <ul>
+        <li><a href="about.html">Home</a></li>
+        <li><a href="test.html">Courses</a></li>
+        <li><a href="Gmail/gmail.html">Gallery</a></li>
+        <li><a href="home.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="heading">
+    <h1>Our Courses</h1>
+    <p>Choose the best course and start your learning journey.</p>
+</div>
+
+<div class="course-container">
+
+    <div class="course">
+        <h2>Web Design and Development</h2>
+        <p>Learn HTML, CSS, JavaScript, Bootstrap and modern web technologies.</p>
+        <button>Enroll Now</button>
+    </div>
+
+    <div class="course">
+        <h2>Python</h2>
+        <p>Master Python programming from beginner to advanced level.</p>
+        <button>Enroll Now</button>
+    </div>
+
+    <div class="course">
+        <h2>Java</h2>
+        <p>Build desktop and enterprise applications using Java programming.</p>
+        <button>Enroll Now</button>
+    </div>
+
+    <div class="course">
+        <h2>UI/UX Design</h2>
+        <p>Learn Photoshop, Illustrator, Canva and creative design techniques.</p>
+        <button>Enroll Now</button>
+    </div>
+
+    <div class="course">
+        <h2>Networking</h2>
+        <p>Study computer networking, CCNA, security and system administration.</p>
+        <button>Enroll Now</button>
+    </div>
+
+    <div class="course">
+        <h2>Digital Marketing</h2>
+        <p>Learn SEO, social media marketing, content creation and online advertising.</p>
+        <button>Enroll Now</button>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Himalaya Academy | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

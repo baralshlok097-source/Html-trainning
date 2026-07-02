@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:Arial, sans-serif;
+        }
+        body{
+            background-color: #f1eff3;
+        }
+        nav{
+            background:#1feff3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        nav ul{
+            display: flex;
+            list-style: none;
+        }
+        nav ul li{
+            margin-left: 30px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+        nav ul li a:hover{
+            color:orange;
+        }
+        
+        .h1{
+            color: #f8f4f4;
+            font-size: 24px;
+        }
+        .j3{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        .j3 div{
+            width: 40%;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .j3 h1, .j3 h2{
+            margin-bottom: 40px;
+        }
+        button{
+            background-color: #1feff3;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover{
+            background-color: #0bb8b9;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="h1">HimalayaLearning</div>
+        <ul>
+
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </nav>
+    <div class="j3">
+        <div>
+            <h1>Welcome to HimalayaLearning</h1>
+            <p>Learn Web development from the beginning to the advance level.
+                register today and start your journey to become a web developer.
+            </p>
+        </div>
+        <div>
+            <h2>Student Registration</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone:</label><br>
+                <input type="number" id="phone" name="phone" placeholder="9800000000" required><br><br>
+
+                <label for="date of birth">Date of Birth:</label><br>
+                <input type="Date" id="date of birth" name="Date of Birth"><br><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+                <label for="courses">Courses:</label><br>
+                <select id="courses" name="courses" required>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="Graphic Design">Graphic Design</option>
+                </select><br><br>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

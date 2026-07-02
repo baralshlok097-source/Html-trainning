@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+         *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, sans-serif;
+    }
+
+    body{
+        background:#f4f4f4;
+    }
+    nav{
+        background:#1f2b42;
+        color:white;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:20px 50px;
+    }
+
+    .logo{
+        font-size:38px;
+        font-weight:bold;
+    }
+
+    nav ul{
+        display:flex;
+        list-style:none;
+    }
+
+    nav ul li{
+        margin-left:30px;
+    }
+
+    nav ul li a{
+        color:white;
+        text-decoration:none;
+        font-size:18px;
+    }
+
+    nav ul li a:hover{
+        color:orange;
+    }
+    .J3{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:60px;
+    }
+    .left{
+        width:50%;
+    }
+
+    .left h1{
+        font-size:60px;
+        margin-bottom:20px;
+    }
+
+    .left p{
+        font-size:28px;
+        line-height:1.6;
+    }
+
+    .form-box{
+        width:430px;
+        background:white;
+        padding:30px;
+        border-radius:10px;
+        box-shadow:0px 0px 15px lightgray;
+    }
+
+    .form-box h2{
+        text-align:center;
+        margin-bottom:25px;
+    }
+
+    label{
+        font-weight:bold;
+    }
+
+    input,select{
+        width:100%;
+        padding:10px;
+        margin:8px 0 15px;
+    }
+
+
+    button{
+        width:100%;
+        padding:12px;
+        background:#1f2b42;
+        color:white;
+        border:none;
+        font-size:18px;
+        cursor:pointer;
+    }
+
+    button:hover{
+        background:#31476d;
+    }
+    @media screen and (max-width: 767px) {
+        .J3 {
+            flex-direction: row;
+            padding: 20px;
+        }
+
+        .left {
+            width: 100%;
+            text-align: bottom;
+        }
+
+        .form-box {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <nav>
+    <div class="logo">EDUCATION AND LEARNING</div>
+
+    <ul>
+        <li><a href="about.html">Home</a></li>
+        <li><a href="test.html">Courses</a></li>
+        <li><a href="Gmail/gmail.html">Gallery</a></li>
+        <li><a href="home.html">Contact</a></li>
+    </ul>
+
+    </nav>
+
+    <div class="J3">
+
+        <div class="left">
+
+            <h1>Welcome to Himalaya Learning class and Academy</h1>
+
+            <p>
+                Learn Web devlopment from the beginner to advanced level.
+                Register today and start your learning journey.
+            </p>
+
+        </div>
+
+        <div class="form-box">
+            <h2>Student Registration</h2>
+            <form>
+                <label for="name">Full Name</label>
+                <input type="text" placeholder="Enter Your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter your email" required>
+
+                <label for="DOB">Date of birth</label>
+                <input type="date" placeholder="YYYY-DD-MM">
+                <label for="phone">Phone no</label>
+                <input type="phone no" placeholder="98XXXXXXXX" required>
+
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter password" required>
+
+                <label for="gender">Gender</label><br>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender">
+                    <label for="other">Other</label>
+                    <input type="radio" name="gender"><br>
+                
+
+                <select>
+                    <option>Web Design and Development</option>
+                    <option>C++</option>
+                    <option>Java</option>
+                    <option>Python</option>
+                    <option>UI/UX Design</option>
+                    <option>Digital Marketing</option>
+                    <option>Networking</option>
+                </select><br><br>
+
+                <button>Register</button>
+            </form>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

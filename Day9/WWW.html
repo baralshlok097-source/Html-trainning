@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: blue;
+            background-color: lightgray;
+        }
+        .strong {
+            position: relative;
+            display: flex;
+            top: 50px;
+            bottom: 45px;
+
+        }
+        @media (max-width: 600px) {
+            h1 {
+                Width: 100%;
+                height: auto;
+                font-size: 20px;
+            }
+            .strong {
+                font-size: 12px;
+                background-color: rgb(195, 166, 223);
+            }
+        }
+        .strong {
+            justify-content: center;
+        }
+        .form box p{
+            align-items: center;
+            margin-bottom: 20px;
+            border: 2px solid #12ff24;
+        }
+        .form box ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        label{
+            font-width: 299px;
+        }
+        @media (max-width: 600px) {
+            .form box p{
+                font-size: 12px;
+                background-color: rgb(195, 166, 223);
+            }
+        }
+        .body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is a simple paragraph.<span class="strong">It is must Significant to the learner.</span> In this way, the learner can understand the concept better.</p>
+    <div class="strong">
+        <strong>Important Note:</strong>
+        <p>This is an important note that should be highlighted.</p>
+        <ul>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+            <li>Fourth item</li>
+        </ul>
+    </div>
+</body>
+</html>
