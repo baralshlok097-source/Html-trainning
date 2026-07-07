@@ -1,0 +1,155 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f8ff;
+}
+
+/* Header */
+
+.header{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    background:#003366;
+    color:white;
+    padding:20px;
+}
+
+.header img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    border:3px solid white;
+}
+
+.header h1{
+    font-size:36px;
+}
+
+/* Navigation */
+
+nav{
+    text-align:center;
+    padding:35px;
+    gap:10px;
+    margin:20px;
+}
+
+nav a{
+    text-decoration:none;
+            color:#131415;
+            font-weight:bold;
+            padding: 40px;
+            margin: 25px;
+            border:2px solid #0a0b0b;
+            border-radius:5px;
+            transition: 0.3s;
+}
+
+nav a:hover{
+    background:#003366;
+    color:rgb(238, 238, 234);
+    border:2px solid #71bc71;
+}
+
+/* Welcome Section */
+
+.welcome{
+    text-align:center;
+    padding:50px;
+    background:white;
+}
+
+.welcome h2{
+    color:#003366;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.welcome p{
+    font-size:20px;
+    color:#555;
+}
+
+/* About Section */
+
+.about{
+    width:85%;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px gray;
+}
+
+.about h2{
+    color:#003366;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.about p{
+    text-align:justify;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+/* Features */
+
+.features{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin:40px;
+    flex-wrap:wrap;
+}
+
+.box{
+    width:280px;
+    background:white;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0px 0px 10px gray;
+}
+
+.box h3{
+    color:#003366;
+    margin-bottom:10px;
+}
+
+.box p{
+    font-size:16px;
+    color:#444;
+}
+
+/* Footer */
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+@media screen and (max-width: 768px) {
+    .features{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .box{
+        width:90%;
+        margin-bottom:20px;
+    }
+    
+}
