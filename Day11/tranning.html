@@ -5,11 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="Java.js"></script>
+    <style>
+        .active{
+            background-color: aqua;
+            color: brown;
+        }
+    </style>
 </head>
 
 <body>
- 
+    <h1>Hello</h1>
+    <button id="btn">Click Me!</button>
+    
+    <div id="div">
+
+    </div>
+    <button id="text">change the text</button>
+    <button id="clear">clear</button>
+    <button id="changecolor">change color</button>
+    <button id="backgroundcolor">change it</button>
+    <button id="turn">alert</button>
+    <button id="togglebtn">toggleit</button>
+    <script>
+        let btn = document.getElementById("btn");
+        let div = document.getElementById("div");
+        let clear = document.getElementById("clear");
+        let changecolor = document.getElementById("changecolor")
+        let color = document.getElementById("backgroundcolor");
+        let text = document.getElementById("text");
+        let turn = document.getElementById("turn");
+        
+        turn.addEventListener("click",()=>{alert ('Hello how are you. Are you not feeling well. Or you are feeling unwell')});
+
+        btn.addEventListener("click",()=>{ div.innerHTML = "<p>there are many people live in a country </p>"});
+        clear.addEventListener("click",()=> {div.innerHTML = "";});
+        changecolor.addEventListener("click",()=> {div.style.color="red";});
+        backgroundcolor.addEventListener("click",()=>{div.style.backgroundColor = "lightblue";});
+        text.addEventListener("click",()=>{div.innerHTML = "<p>Hello how are you. Are you not feeling well</p>"});
+    </script>
 </body>
 
 </html>

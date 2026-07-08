@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="h1">Heading 1</h1>
+        <p>
+            Budhanilakantha Secondary English School is a well-known English-medium educational institution located in Shankarpur, Biratnagar-2, Morang, Nepal. Established in 2040 B.S. 
+            (1984 A.D.), the school has been dedicated to providing quality education for more than four decades.
+        </p>
+        <div>
+            <h2>Heading 2</h2>
+            <p>
+                It offers education from Nursery (Play Group) to Grade 10 in a safe, disciplined, and student-friendly learning environment.
+           </p>
+        </div>
+        <div>
+            <h3>Head</h3>
+        </div>
+    </div>
+    <button id="btn">alert</button>
+    <script>
+        document.body.style.color = "red";
+
+        let h1 = document.getElementById('h1');
+        h1.style.color = "Blue";
+
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click",()=>{alert ('this  is  a alert message.')});
+        let togglebtn = document.getElementById("togglebtn");
+
+        togglebtn.addEventListener("click", function() {btn.classList.toogle("active");});
+    </script>
+</body>
+</html>

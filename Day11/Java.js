@@ -1,4 +1,5 @@
- function greet(name) {
+// with Parameterand retyurn value
+function greet(name) {
      console.log("Hello" + name)
  }
 
@@ -11,6 +12,7 @@
  let result = add(5, 3);
  console.log(result);
 
+ // wit
  function greet() {
      console.log("HI"+name);
  }
@@ -31,7 +33,7 @@ greet("Figma");
 function rename(a, b){
     console.log(a-b);
 }
- let sub = subtract(2, 3);
+ let rename = sub(2, 3);
  console.log(subtract);
 
  function greet(name){
@@ -44,6 +46,6 @@ function rename(a, b){
     
  }
 
-let multi= multiply(22, 2);
+let many= multiply(22, 2);
  console.log(multi);
 
