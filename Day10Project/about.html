@@ -147,7 +147,7 @@ footer{
 <nav>
 
 <div class="logo">
-    <img src="Budhanilkantha.jpg" alt="Logo">
+    <img id="hover" src="Budhanilkantha.jpg" alt="Logo">
     <h2>Budhanilkantha Sec. Eng. School</h2>
 </div>
 
@@ -156,7 +156,7 @@ footer{
     <li><a href="Wbsite.html">Home</a></li>
     <li><a href="about.html">Courses</a></li>
     <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="shlok/Contact.html">Contact</a></li>
+    <li><a href="Contact.html">Contact</a></li>
 </ul>
 
 </nav>
@@ -225,6 +225,15 @@ with modern teaching methods and experienced teachers.
 <p>Shankarpur, Biratnagar-2, Morang, Nepal</p>
 
 </footer>
+    <script>
+        const img= document.getElementById("hover");
+
+        const originalsrc = "Budhanilkantha.jpg";
+        const hoversrc = "campus.jpg";
+
+        img.addEventListener('mouseover', () =>{img.src = hoversrc;});
+        img.addEventListener('mouseout', ()=> {img.src = originalsrc;});  
+    </script>
 
 </body>
 </html>

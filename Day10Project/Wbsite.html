@@ -14,7 +14,7 @@
 
     <div class="header">
 
-        <img src="Budhanilkantha.jpg" alt="School Logo">
+        <img id="hover" src="Budhanilkantha.jpg" alt="School Logo">
 
         <h1>Budhanilkantha Sec. Eng. School</h1>
 
@@ -22,12 +22,12 @@
 
     <!-- Navigation -->
 
-    <nav>
+    <nav id="nav">
         <a href="Mainpage.html">Menu</a>
         <a href="Wbsite.html">Home</a>
         <a href="about.html">About</a>
         <a href="gallery.html">Gallery</a>
-        <a href="shlok/Contact.html">Contact</a>
+        <a href="Contact.html">Contact</a>
     </nav>
 
     <!-- Welcome -->
@@ -98,7 +98,15 @@
         <p>Shankarpur, Biratnagar-2, Morang, Nepal</p>
 
     </footer>
+    <script>
+        const img= document.getElementById("hover");
 
+        const originalsrc = "Budhanilkantha.jpg";
+        const hoversrc = "campus.jpg";
+
+        img.addEventListener('mouseover', () =>{img.src = hoversrc;});
+        img.addEventListener('mouseout', ()=> {img.src = originalsrc;});  
+    </script>
 </body>
 
 </html>

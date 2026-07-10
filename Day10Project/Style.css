@@ -24,10 +24,15 @@ body{
 }
 
 .header img{
-    width:90px;
-    height:90px;
+    width:86px;
+    height:86px;
     border-radius:50%;
     border:3px solid white;
+}
+.header img:hover{
+    height: 86px;
+    width: 86px;
+    border-radius: 50%;
 }
 
 .header h1{

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            border: 2px solid rgb(243, 7, 7);
+            border-radius: 22px;
+            transition: 0.03s;
+            height: 340px;
+            width:340px;
+        }
+        img:hover{
+            width: 340px;
+            height: 340px;
+            border-color: rgb(225, 225, 8);
+            border-radius: 22px;
+        }
+    </style>
+</head>
+<body>
+    <img id="hover" src="shlok/Campus.jpg" alt="defult">
+
+    <script>
+        const img= document.getElementById("hover");
+
+        const originalsrc = "shlok/computer.jpg";
+        const hoversrc = "shlok/campus.jpg";
+
+        img.addEventListener('mouseover', () =>{img.src = hoversrc;});
+        img.addEventListener('mouseout', ()=> {img.src = originalsrc;});  
+    </script>
+</body>
+</html>

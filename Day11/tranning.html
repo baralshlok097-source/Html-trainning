@@ -6,9 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .active{
+        .light-mode{
+            color: rgb(21, 1, 1);
             background-color: aqua;
-            color: brown;
+            border: 2px solid brown;
+            border-radius: 22px;
+            padding: 20px;
+            margin: 20px;
+        }
+        .light-mode:hover{
+             color:rgb(239, 4, 4);
+             background-color: rgb(40, 160, 150);
+             border: 2px solid brown;
+             background-image: none;
+        }
+        form{
+            border: 2px solid brown;
+            box-sizing: content-box;
         }
     </style>
 </head>
@@ -16,16 +30,15 @@
 <body>
     <h1>Hello</h1>
     <button id="btn">Click Me!</button>
-    
-    <div id="div">
-
-    </div>
     <button id="text">change the text</button>
     <button id="clear">clear</button>
     <button id="changecolor">change color</button>
     <button id="backgroundcolor">change it</button>
     <button id="turn">alert</button>
     <button id="togglebtn">toggleit</button>
+    <div class="form" id="div">
+    
+    </div>
     <script>
         let btn = document.getElementById("btn");
         let div = document.getElementById("div");
@@ -34,13 +47,16 @@
         let color = document.getElementById("backgroundcolor");
         let text = document.getElementById("text");
         let turn = document.getElementById("turn");
-        
+        let togglebtn = document.getElementById("togglebtn");
+        let body = document.body;
+
+        togglebtn.addEventListener("click", function(){body.classList.toggle("light-mode");});
         turn.addEventListener("click",()=>{alert ('Hello how are you. Are you not feeling well. Or you are feeling unwell')});
 
         btn.addEventListener("click",()=>{ div.innerHTML = "<p>there are many people live in a country </p>"});
         clear.addEventListener("click",()=> {div.innerHTML = "";});
         changecolor.addEventListener("click",()=> {div.style.color="red";});
-        backgroundcolor.addEventListener("click",()=>{div.style.backgroundColor = "lightblue";});
+        backgroundcolor.addEventListener("click",()=>{div.style.backgroundColor = "lightpink";});
         text.addEventListener("click",()=>{div.innerHTML = "<p>Hello how are you. Are you not feeling well</p>"});
     </script>
 </body>
